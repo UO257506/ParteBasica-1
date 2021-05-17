@@ -121,11 +121,8 @@ void GenPWM(float duty)
     
     // Configuración de la base de tiempos del PWM OC1 (pin RD0)
     TMR2 = 0;           // Seleccionamo como base el TMR2
-    PR2 = 0;
-    
-    PR2 = (FCY/8)/FPWM; // Periodo de la señal: 1/737Hz
-    T2CON = 0x8010;     // Timer on, PS = 8, señal de reloj interna
-    
+    PR2 = (FCY/737); // Periodo de la señal: 1/737Hz
+    T2CON = 0x0000;
     // Configuración del módulo PWM 1
     OC1CONbits.OCSIDL = 0;  // No funciona en modo IDLE
     OC1CONbits.OCTSEL = 0;  // Base de tiempos TMR2
@@ -152,7 +149,7 @@ return;
 // Funcion: VALOR MEDIO  
 float Avg(float array[], unsigned int size)
 {
-    unsigned long suma = 0;         // Suma should be longer than an integer to avoid overflow. Next type is long (32 bits)
+    float suma = 0.0;         // Suma should be longer than an integer to avoid overflow. Next type is long (32 bits)
     unsigned int i = 0;             // Index
     for (i=0;i<size;i++)        
         suma = suma + array[i];     // Sum of all elements
@@ -162,7 +159,7 @@ float Avg(float array[], unsigned int size)
 //Funcion: VALOR MAXIMO 
 float Max(float array[], unsigned int size)
 {
-    unsigned int max = 0;       // Inicializo el maximo a '0'
+    float max = 0.0;       // Inicializo el maximo a '0'
     unsigned int i = 0;
     for (i=0;i<size;i++)
     {
@@ -175,7 +172,7 @@ float Max(float array[], unsigned int size)
 //Funcion: VALOR RMS
 float Rms(float array[], unsigned int size)
 {
-    float suma2 = 0;       // Inicializo el maximo a '0'
+    float suma2 = 0.0;       // Inicializo el maximo a '0'
     unsigned int i;
     float rms = 0.0;
     

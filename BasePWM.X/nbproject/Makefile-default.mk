@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=Func.c Main.c C:/Users/evely/Desktop/PLs_2021/DEP_PL1/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c
+SOURCEFILES_QUOTED_IF_SPACED=Func.c Main.c C:/Users/evely/Desktop/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Func.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/_ext/135852339/LCD_Display.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/Func.o.d ${OBJECTDIR}/Main.o.d ${OBJECTDIR}/_ext/135852339/LCD_Display.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/Func.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/_ext/358942759/LCD_Display.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/Func.o.d ${OBJECTDIR}/Main.o.d ${OBJECTDIR}/_ext/358942759/LCD_Display.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/Func.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/_ext/135852339/LCD_Display.o
+OBJECTFILES=${OBJECTDIR}/Func.o ${OBJECTDIR}/Main.o ${OBJECTDIR}/_ext/358942759/LCD_Display.o
 
 # Source Files
-SOURCEFILES=Func.c Main.c C:/Users/evely/Desktop/PLs_2021/DEP_PL1/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c
+SOURCEFILES=Func.c Main.c C:/Users/evely/Desktop/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c
 
 
 CFLAGS=
@@ -108,12 +108,12 @@ ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  Main.c  -o ${OBJECTDIR}/Main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/135852339/LCD_Display.o: C\:/Users/evely/Desktop/PLs_2021/DEP_PL1/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/135852339" 
-	@${RM} ${OBJECTDIR}/_ext/135852339/LCD_Display.o.d 
-	@${RM} ${OBJECTDIR}/_ext/135852339/LCD_Display.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  C:/Users/evely/Desktop/PLs_2021/DEP_PL1/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c  -o ${OBJECTDIR}/_ext/135852339/LCD_Display.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/135852339/LCD_Display.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/135852339/LCD_Display.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+${OBJECTDIR}/_ext/358942759/LCD_Display.o: C\:/Users/evely/Desktop/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/358942759" 
+	@${RM} ${OBJECTDIR}/_ext/358942759/LCD_Display.o.d 
+	@${RM} ${OBJECTDIR}/_ext/358942759/LCD_Display.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  C:/Users/evely/Desktop/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c  -o ${OBJECTDIR}/_ext/358942759/LCD_Display.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/358942759/LCD_Display.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1    -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/358942759/LCD_Display.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 else
 ${OBJECTDIR}/Func.o: Func.c  nbproject/Makefile-${CND_CONF}.mk
@@ -130,12 +130,12 @@ ${OBJECTDIR}/Main.o: Main.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE)  Main.c  -o ${OBJECTDIR}/Main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/Main.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
 	@${FIXDEPS} "${OBJECTDIR}/Main.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/135852339/LCD_Display.o: C\:/Users/evely/Desktop/PLs_2021/DEP_PL1/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/135852339" 
-	@${RM} ${OBJECTDIR}/_ext/135852339/LCD_Display.o.d 
-	@${RM} ${OBJECTDIR}/_ext/135852339/LCD_Display.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  C:/Users/evely/Desktop/PLs_2021/DEP_PL1/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c  -o ${OBJECTDIR}/_ext/135852339/LCD_Display.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/135852339/LCD_Display.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/135852339/LCD_Display.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+${OBJECTDIR}/_ext/358942759/LCD_Display.o: C\:/Users/evely/Desktop/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/358942759" 
+	@${RM} ${OBJECTDIR}/_ext/358942759/LCD_Display.o.d 
+	@${RM} ${OBJECTDIR}/_ext/358942759/LCD_Display.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  C:/Users/evely/Desktop/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c  -o ${OBJECTDIR}/_ext/358942759/LCD_Display.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/358942759/LCD_Display.o.d"        -g -omf=elf -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -O0 -msmart-io=1 -Wall -msfr-warn=off  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/358942759/LCD_Display.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 endif
 
@@ -178,3 +178,11 @@ endif
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r build/default
 	${RM} -r dist/default
+
+# Enable dependency checking
+.dep.inc: .depcheck-impl
+
+DEPFILES=$(shell mplabwildcard ${POSSIBLE_DEPFILES})
+ifneq (${DEPFILES},)
+include ${DEPFILES}
+endif

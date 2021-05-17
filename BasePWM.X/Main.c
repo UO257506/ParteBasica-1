@@ -74,7 +74,7 @@ int main (void)
     ConfigInt();               // Configure interrupts 
     GenPWM(duty);               // Inicializar el PWM
     
-    //T3CONbits.TON = 1;         // Start TMR3
+    T3CONbits.TON = 1;         // Start TMR3
     T2CONbits.TON = 1;         // Start TMR3
     T1CONbits.TON = 1;         // Start TMR3
         

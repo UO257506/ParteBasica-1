@@ -7,7 +7,7 @@
       <itemPath>Config.h</itemPath>
       <itemPath>Func.h</itemPath>
       <itemPath>Main.h</itemPath>
-      <itemPath>C:/Users/evely/Desktop/PLs_2021/DEP_PL1/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_display.h</itemPath>
+      <itemPath>C:/Users/evely/Desktop/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_display.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -18,7 +18,7 @@
                    projectFiles="true">
       <itemPath>Func.c</itemPath>
       <itemPath>Main.c</itemPath>
-      <itemPath>C:/Users/evely/Desktop/PLs_2021/DEP_PL1/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c</itemPath>
+      <itemPath>C:/Users/evely/Desktop/TRABAJO_DSPIC/ParteBasica-1/BasePWM.X/LCD_Display.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
