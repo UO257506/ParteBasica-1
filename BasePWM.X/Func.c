@@ -106,7 +106,7 @@ void ConfigInt()
     IEC0bits.T1IE = 1;              // Set local mask
     IPC0bits.T1IP = 5;              // Set priority level
     
-    SET_CPU_IPL(6);                 // Set CPU priority level to a value below the lowest interrupt
+    SET_CPU_IPL(3);                 // Set CPU priority level to a value below the lowest interrupt
     return;   
 }
 
