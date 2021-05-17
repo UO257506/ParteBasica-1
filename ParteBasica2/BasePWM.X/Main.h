@@ -34,7 +34,7 @@
 #define HOME_CLEAR 0x82 // Comando cursor inicio
 #define CURSOR_ON 0x8C // Comando para activar el cursor
 
-#define NUM_MUESTRA 300 //Numero de muestras necesarias
+#define NUM_MUESTRA 200 //Numero de muestras necesarias
 
 #include <libpic30.h>
 

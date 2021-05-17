@@ -16,9 +16,10 @@
 // Parámetros de salida: ninguno (void).
 void InitIO()
 {
+    TRISA = 0xFFFF;               //Set pushbutton switch pins as inputs
 	TRISB = 0xFFFF;     // Initialize AN6 as input                
     TRISD = 0xFFF0;     // LED outputs
-    //LATD = 0xFFF0;      // LED on
+    LATD = 0xFFFF;      // LED off
     return;
 }// InitIO
 
@@ -106,7 +107,7 @@ void ConfigInt()
     IEC0bits.T1IE = 1;              // Set local mask
     IPC0bits.T1IP = 5;              // Set priority level
     
-    SET_CPU_IPL(6);                 // Set CPU priority level to a value below the lowest interrupt
+    SET_CPU_IPL(1);                 // Set CPU priority level to a value below the lowest interrupt
     return;   
 }
 
@@ -121,10 +122,9 @@ void GenPWM(float duty)
     
     // Configuración de la base de tiempos del PWM OC1 (pin RD0)
     TMR2 = 0;           // Seleccionamo como base el TMR2
-    PR2 = 0;
-    
-    PR2 = (FCY/8)/FPWM; // Periodo de la señal: 1/737Hz
-    T2CON = 0x8010;     // Timer on, PS = 8, señal de reloj interna
+
+    PR2 = (FCY/737); // Periodo de la señal: 1/737Hz
+    T2CON = 0x0000;     // Timer on, 
     
     // Configuración del módulo PWM 1
     OC1CONbits.OCSIDL = 0;  // No funciona en modo IDLE

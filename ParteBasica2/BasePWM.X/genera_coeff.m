@@ -23,7 +23,7 @@ clear all
 %devuelve una estructura en la que se incluyen los coeficientes
 %calculados. Se encuentran en una variable llamada "num" en el campo
 %"numerator"
-aux=pasobandaBasic;
+aux=pasoBanda1;
 
 %Se calcula el número de coeficientes, que ha de ser (forder+1)
 num_coef=length(aux.numerator);
@@ -59,7 +59,7 @@ fract_b_coef.hex
 %archivo .s generado, coincida que el archivo .s que genera el dspicfdlite
 
 %path = 'G:\Universidad\Dispositivos Electrónicos Programables\DSPs\PL3\FIR_MatLab\';
-path = 'C:\Users\evely\Desktop\PLs_2021\DEP_PL1\TRABAJO_DSPIC\BasePWM.X\';
+path = 'C:\Users\evely\Desktop\TRABAJO_DSPIC\ParteBasica-1\ParteBasica2\BasePWM.X\';
 file_name=input('Nombre para fichero FIR (sin el .s):','s');
 file = strcat(file_name,'.s');
 tm = menu('Escoge el tipo de mem. para coef.','X Data space','Program Space') 
